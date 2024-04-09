@@ -1,0 +1,33 @@
+---
+import Social from "./Card/Social.astro";
+---
+
+<div class="w-screen flex items-center justify-evenly max-w-[1000px]">
+  <section class="flex items-center justify-center flex-row h-[350px] gap-10">
+    <aside class="text-[#F6F6F6] w-full h-full flex justify-evenly flex-col">
+      <h1 class="text-[40px] font-bold">Francisco Meléndez</h1>
+      <h2
+        class="bg-[#3D3D3D] size-fit p-2 rounded-lg font-semibold text-[20px]"
+      >
+        &lt; Desarrollador Web /&gt;
+      </h2>
+      <p class="font-light text-[#D1D1D1] text-[20px]">
+        Estudiante de ingenieria en sistemas de información, un entusiasta de la
+        programación de la programación en busca de oportunidades para crecer y
+        desarrollarme en el mundo de la tecnología.
+      </p>
+      <article class="flex items-center gap-2">
+        <Social img="/Iconos/Github.svg" name="Github" url="/" />
+        <Social img="/Iconos/LinkedIn.svg" name="LinkedIn" url="/" />
+        <Social img="/Iconos/Gmail.svg" name="Gmail" url="/" />
+      </article>
+    </aside>
+    <img src="/Perfil.png" class="size-[350px]" alt="Foto de perfil de FranciscoMelen10 " />
+  </section>
+</div>
+
+<style>
+  div {
+    height: calc(100vh - 100px);
+  }
+</style>

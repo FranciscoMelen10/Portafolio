@@ -1,0 +1,176 @@
+---
+import Proyecto from "./Items.astro";
+
+const Proyectos = [
+  {
+    titulo: "Portafolio de Francisco Perdomo",
+    background: "/public/Background/Fondo.svg",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
+    repositorio: "",
+    iconos: [
+      {
+        nombre: "Astro",
+        url: "/public/Iconos/Astro.svg",
+      },
+      {
+        nombre: "Figma",
+        url: "/public/Iconos/Figma.svg",
+      },
+      {
+        nombre: "Visual Studio",
+        url: "/public/Iconos/Visual Studio.svg",
+      },
+      {
+        nombre: "CSS",
+        url: "/public/Iconos/CSS.svg",
+      },
+      {
+        nombre: "JavaScript",
+        url: "/public/Iconos/JavaScript.svg",
+      },
+    ],
+  },
+  {
+    titulo: "Virtual Chef - Web",
+    background: "/public/Background/Fondo 2.svg",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
+    repositorio: "",
+    iconos: [
+      {
+        nombre: "Figma",
+        url: "/public/Iconos/Figma.svg",
+      },
+      {
+        nombre: "Visual Studio",
+        url: "/public/Iconos/Visual Studio.svg",
+      },
+      {
+        nombre: "React",
+        url: "/public/Iconos/React.svg",
+      },
+      {
+        nombre: "Tailwind",
+        url: "/public/Iconos/Tailwind.svg",
+      },
+    ],
+  },
+  {
+    titulo: "Dev Challenges - Frontend",
+    background: "/public/Background/Fondo 3.svg",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
+    repositorio: "",
+    iconos: [
+      {
+        nombre: "Figma",
+        url: "/public/Iconos/Figma.svg",
+      },
+      {
+        nombre: "Visual Studio",
+        url: "/public/Iconos/Visual Studio.svg",
+      },
+      {
+        nombre: "Astro",
+        url: "/public/Iconos/React.svg",
+      },
+      {
+        nombre: "Tailwind",
+        url: "/public/Iconos/Tailwind.svg",
+      },
+    ],
+  },
+  {
+    titulo: "Portafolio de Francisco Perdomo",
+    background: "/public/Background/Fondo.svg",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
+    repositorio: "",
+    iconos: [
+      {
+        nombre: "Astro",
+        url: "/public/Iconos/Astro.svg",
+      },
+      {
+        nombre: "Figma",
+        url: "/public/Iconos/Figma.svg",
+      },
+      {
+        nombre: "Visual Studio",
+        url: "/public/Iconos/Visual Studio.svg",
+      },
+      {
+        nombre: "CSS",
+        url: "/public/Iconos/CSS.svg",
+      },
+      {
+        nombre: "JavaScript",
+        url: "/public/Iconos/JavaScript.svg",
+      },
+    ],
+  },
+  {
+    titulo: "Virtual Chef - Web",
+    background: "/public/Background/Fondo 2.svg",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
+    repositorio: "",
+    iconos: [
+      {
+        nombre: "Figma",
+        url: "/public/Iconos/Figma.svg",
+      },
+      {
+        nombre: "Visual Studio",
+        url: "/public/Iconos/Visual Studio.svg",
+      },
+      {
+        nombre: "React",
+        url: "/public/Iconos/React.svg",
+      },
+      {
+        nombre: "Tailwind",
+        url: "/public/Iconos/Tailwind.svg",
+      },
+    ],
+  },
+  {
+    titulo: "Dev Challenges - Frontend",
+    background: "/public/Background/Fondo 3.svg",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
+    repositorio: "",
+    iconos: [
+      {
+        nombre: "Figma",
+        url: "/public/Iconos/Figma.svg",
+      },
+      {
+        nombre: "Visual Studio",
+        url: "/public/Iconos/Visual Studio.svg",
+      },
+      {
+        nombre: "Astro",
+        url: "/public/Iconos/React.svg",
+      },
+      {
+        nombre: "Tailwind",
+        url: "/public/Iconos/Tailwind.svg",
+      },
+    ],
+  },
+];
+---
+
+<div
+  id="proyectos"
+  class="my-8 flex items-center justify-center flex-col max-w-[1000px] gap-6"
+>
+  <h1 class="text-[#F6F6F6] text-[48px] font-bold">Proyectos</h1>
+  {
+    Proyectos.map((data) => {
+      return <Proyecto proyecto={data} />;
+    })
+  }
+</div>

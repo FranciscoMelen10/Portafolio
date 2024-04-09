@@ -1,0 +1,43 @@
+---
+import Icon from "../Card/Icon.astro";
+
+interface Tecnologia {
+  nombre: string;
+  url: string;
+}
+
+interface Proyecto {
+  titulo: string;
+  background: string;
+  descripcion: string;
+  repositorio: string;
+  iconos: Tecnologia[];
+}
+
+interface Props {
+  proyecto: Proyecto;
+}
+
+const { proyecto } = Astro.props;
+---
+
+<div class="flex justify-center items-center gap-6 h-[250px]">
+  <img src={proyecto.background} alt={proyecto.titulo} loading="lazy"/>
+  <section class="flex flex-col justify-between w-full text-[#F6F6F6] h-full">
+    <h1 class="text-[30px] font-semibold">{proyecto.titulo}</h1>
+    <ul class=" flex gap-2 flex-wrap">
+      {
+        proyecto.iconos.map((icono) => (
+          <Icon nombre={icono.nombre} url={icono.url} />
+        ))
+      }
+    </ul>
+    <p>{proyecto.descripcion}</p>
+    <a
+      class="flex gap-1 py-2 px-3 bg-[#0B0B0B]  w-fit rounded-md" href="/"
+    >
+      <img class="size-[25px]" src="/public/Iconos/Github.svg" loading="lazy" alt="Github Icon"/>
+      <span>Ver código</span>
+    </a>
+  </section>
+</div>

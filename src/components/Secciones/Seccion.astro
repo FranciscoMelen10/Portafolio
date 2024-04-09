@@ -1,0 +1,16 @@
+---
+interface Props {
+  name: string;
+  url: string;
+  etiqueta: string;
+}
+const { name, url, etiqueta } = Astro.props;
+---
+
+<div
+  class="w-screenflex items-center justify-center gap-12 flex-col max-w-[1000px] text-center my-14"
+  id={etiqueta}
+>
+  <h1 class="text-[#F6F6F6] text-[50px] font-extrabold">{name}</h1>
+  <slot />
+</div>

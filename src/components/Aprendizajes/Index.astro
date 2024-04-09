@@ -1,0 +1,94 @@
+---
+import Aprendizaje from "./Items.astro"
+
+const Desarrollo_Web = {
+    titulo: "Desarrollo Web",
+    iconos: [
+        {
+            nombre: "Astro",
+            url: "/public/Iconos/Astro.svg",
+        },
+        {
+            nombre: "React",
+            url: "/public/Iconos/React.svg",
+        },
+        {
+            nombre: "Tailwind",
+            url: "/public/Iconos/Tailwind.svg",
+        },
+        {
+            nombre: "Javascript",
+            url: "/public/Iconos/Javascript.svg",
+        },
+        {
+            nombre: "HTML",
+            url: "/Iconos/HTML.svg",
+        },
+        {
+            nombre: "CSS",
+            url: "/public/Iconos/CSS.svg",
+        },
+    ],
+};
+
+const Escritorio = {
+    titulo: "Aplicaciones de escritorio",
+    iconos: [
+        {
+            nombre: "Python",
+            url: "/public/Iconos/Python.svg",
+        },
+        {
+            nombre: "Java",
+            url: "/public/Iconos/Java.svg",
+        },
+        {
+            nombre: "C#",
+            url: "/public/Iconos/C++.svg",
+        },
+        {
+            nombre: "Visual Basic",
+            url: "/public/Iconos/Visual Basic.svg",
+        },
+    ],
+};
+
+const Herramientas = {
+    titulo: "Herramientas",
+    iconos: [
+        {
+            nombre: "Visual Studio Code",
+            url: "/public/Iconos/Visual Code.svg",
+        },
+        {
+            nombre: "Visual Studio",
+            url: "/public/Iconos/Visual Studio.svg",
+        },
+        {
+            nombre: "Figma",
+            url: "/public/Iconos/Figma.svg",
+        },
+    ],
+};
+
+const Database = {
+    titulo: "Base de datos",
+    iconos: [
+        {
+            nombre: "SQL Server",
+            url: "/public/Iconos/Sql Server.svg",
+        },
+        {
+            nombre: "MySQL",
+            url: "/public/Iconos/Mysql.svg",
+        }
+    ],
+};
+---
+
+<div>
+    <Aprendizaje aprendizaje={Desarrollo_Web} />
+    <Aprendizaje aprendizaje={Escritorio} />
+    <Aprendizaje aprendizaje={Database} />
+    <Aprendizaje aprendizaje={Herramientas} />
+</div>
