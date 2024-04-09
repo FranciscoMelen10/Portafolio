@@ -22,9 +22,9 @@ const { proyecto } = Astro.props;
 console.log(proyecto);
 ---
 
-<div class="flex justify-center items-center gap-6 h-[250px]">
-  <img src={proyecto.background} alt={proyecto.titulo} loading="lazy"/>
-  <section class="flex flex-col justify-between w-full text-[#F6F6F6] h-full">
+<div class="flex justify-center items-center gap-6 h-[250px] my-5" >
+  <img src={proyecto.background} alt={proyecto.titulo} loading="lazy" data-aos="fade-up-right"/>
+  <section class="flex flex-col justify-between w-full text-[#F6F6F6] h-full" data-aos="fade-up-left">
     <h1 class="text-[30px] font-semibold">{proyecto.titulo}</h1>
     <ul class=" flex gap-2 flex-wrap">
       {

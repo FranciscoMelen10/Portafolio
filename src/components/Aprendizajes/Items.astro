@@ -18,13 +18,13 @@ interface Props {
 const { aprendizaje } = Astro.props;
 ---
 
-<section class="flex items-center justify-center flex-col gap-2 my-4">
+<section class="flex items-center justify-center flex-col gap-2 my-8" data-aos="fade-up">
   <h1 class="text-[#D1D1D1] text-[24px]">{aprendizaje.titulo}</h1>
   <section class="gap-2 flex flex-row">
     <ul class="text-[#F6F6F6] flex gap-2 flex-wrap">
       {
         aprendizaje.iconos.map((icono) => (
-          <Icon nombre={icono.nombre} url={icono.url}/>
+          <Icon nombre={icono.nombre} imagen={icono.url}/>
         ))
       }
     </ul>
