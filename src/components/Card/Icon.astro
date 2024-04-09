@@ -1,15 +1,15 @@
 ---
 interface Props {
   nombre: string;
-  url: string;
+  imagen: string;
 }
 
-const { nombre, url } = Astro.props;
+const { nombre, imagen } = Astro.props;
 ---
 
 <div
   class="flex items-center justify-center px-2 py-1 gap-1 bg-[#F6F6F6] rounded-md"
 >
-  <img src={url} alt={nombre} class="size-[20px]" loading="lazy" />
+  <img src={imagen} alt={nombre} class="size-[20px]" loading="lazy" />
   <span class="text-black">{nombre}</span>
 </div>

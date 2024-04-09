@@ -3,7 +3,7 @@ import Icon from "../Card/Icon.astro";
 
 interface Tecnologia {
   nombre: string;
-  url: string;
+  imagen: string;
 }
 
 interface Proyecto {
@@ -19,6 +19,7 @@ interface Props {
 }
 
 const { proyecto } = Astro.props;
+console.log(proyecto);
 ---
 
 <div class="flex justify-center items-center gap-6 h-[250px]">
@@ -28,13 +29,14 @@ const { proyecto } = Astro.props;
     <ul class=" flex gap-2 flex-wrap">
       {
         proyecto.iconos.map((icono) => (
-          <Icon nombre={icono.nombre} url={icono.url} />
+          
+          <Icon nombre={icono.nombre} imagen={icono.imagen} />
         ))
       }
     </ul>
     <p>{proyecto.descripcion}</p>
     <a
-      class="flex gap-1 py-2 px-3 bg-[#0B0B0B]  w-fit rounded-md" href="/"
+      class="flex gap-1 py-2 px-3 bg-[#0B0B0B]  w-fit rounded-md" href={`${proyecto.repositorio}`}
     >
       <img class="size-[25px]" src="/public/Iconos/Github.svg" loading="lazy" alt="Github Icon"/>
       <span>Ver código</span>

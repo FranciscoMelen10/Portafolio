@@ -1,166 +1,27 @@
 ---
+// Componetes
 import Proyecto from "./Items.astro";
 
-const Proyectos = [
-  {
-    titulo: "Portafolio de Francisco Perdomo",
-    background: "/public/Background/Fondo.svg",
-    descripcion:
-      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
-    repositorio: "",
-    iconos: [
-      {
-        nombre: "Astro",
-        url: "/public/Iconos/Astro.svg",
-      },
-      {
-        nombre: "Figma",
-        url: "/public/Iconos/Figma.svg",
-      },
-      {
-        nombre: "Visual Studio",
-        url: "/public/Iconos/Visual Studio.svg",
-      },
-      {
-        nombre: "CSS",
-        url: "/public/Iconos/CSS.svg",
-      },
-      {
-        nombre: "JavaScript",
-        url: "/public/Iconos/JavaScript.svg",
-      },
-    ],
-  },
-  {
-    titulo: "Virtual Chef - Web",
-    background: "/public/Background/Fondo 2.svg",
-    descripcion:
-      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
-    repositorio: "",
-    iconos: [
-      {
-        nombre: "Figma",
-        url: "/public/Iconos/Figma.svg",
-      },
-      {
-        nombre: "Visual Studio",
-        url: "/public/Iconos/Visual Studio.svg",
-      },
-      {
-        nombre: "React",
-        url: "/public/Iconos/React.svg",
-      },
-      {
-        nombre: "Tailwind",
-        url: "/public/Iconos/Tailwind.svg",
-      },
-    ],
-  },
-  {
-    titulo: "Dev Challenges - Frontend",
-    background: "/public/Background/Fondo 3.svg",
-    descripcion:
-      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
-    repositorio: "",
-    iconos: [
-      {
-        nombre: "Figma",
-        url: "/public/Iconos/Figma.svg",
-      },
-      {
-        nombre: "Visual Studio",
-        url: "/public/Iconos/Visual Studio.svg",
-      },
-      {
-        nombre: "Astro",
-        url: "/public/Iconos/React.svg",
-      },
-      {
-        nombre: "Tailwind",
-        url: "/public/Iconos/Tailwind.svg",
-      },
-    ],
-  },
-  {
-    titulo: "Portafolio de Francisco Perdomo",
-    background: "/public/Background/Fondo.svg",
-    descripcion:
-      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
-    repositorio: "",
-    iconos: [
-      {
-        nombre: "Astro",
-        url: "/public/Iconos/Astro.svg",
-      },
-      {
-        nombre: "Figma",
-        url: "/public/Iconos/Figma.svg",
-      },
-      {
-        nombre: "Visual Studio",
-        url: "/public/Iconos/Visual Studio.svg",
-      },
-      {
-        nombre: "CSS",
-        url: "/public/Iconos/CSS.svg",
-      },
-      {
-        nombre: "JavaScript",
-        url: "/public/Iconos/JavaScript.svg",
-      },
-    ],
-  },
-  {
-    titulo: "Virtual Chef - Web",
-    background: "/public/Background/Fondo 2.svg",
-    descripcion:
-      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
-    repositorio: "",
-    iconos: [
-      {
-        nombre: "Figma",
-        url: "/public/Iconos/Figma.svg",
-      },
-      {
-        nombre: "Visual Studio",
-        url: "/public/Iconos/Visual Studio.svg",
-      },
-      {
-        nombre: "React",
-        url: "/public/Iconos/React.svg",
-      },
-      {
-        nombre: "Tailwind",
-        url: "/public/Iconos/Tailwind.svg",
-      },
-    ],
-  },
-  {
-    titulo: "Dev Challenges - Frontend",
-    background: "/public/Background/Fondo 3.svg",
-    descripcion:
-      "Lorem ipsum dolor sit amet consectetur. Diam pellentesque id est diam iaculis commodo ut lectus. Diam id est diam iaculis commodo ut lectus. ",
-    repositorio: "",
-    iconos: [
-      {
-        nombre: "Figma",
-        url: "/public/Iconos/Figma.svg",
-      },
-      {
-        nombre: "Visual Studio",
-        url: "/public/Iconos/Visual Studio.svg",
-      },
-      {
-        nombre: "Astro",
-        url: "/public/Iconos/React.svg",
-      },
-      {
-        nombre: "Tailwind",
-        url: "/public/Iconos/Tailwind.svg",
-      },
-    ],
-  },
-];
+// Hooks
+import { proyectos } from "../../hooks/Proyectos";
+
+// Agregar todos los proyectos en este arreglo mediante el hook de proyectos
+let Proyectos = [];
+
+proyectos.map((data) => {
+  Proyectos.push({
+    titulo: data.nombre,
+    background: `https://portafolio.pockethost.io/api/files/${data.collectionId}/${data.id}/${data.imagen}`,
+    descripcion: data.descripcion,
+    repositorio: data.repositorio,
+    iconos: data.expand.herramientasId.map((herramienta) => {
+      return {
+        nombre: herramienta.nombre,
+        imagen: `https://portafolio.pockethost.io/api/files/${herramienta.collectionId}/${herramienta.id}/${herramienta.imagen}`,
+      };
+    }),
+  });
+});
 ---
 
 <div
