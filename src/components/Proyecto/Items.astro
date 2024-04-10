@@ -34,11 +34,11 @@ const { proyecto } = Astro.props;
   />
   <section
     class="flex flex-col justify-between w-full text-[#F6F6F6] h-full max-lg:w-auto gap-1 max-lg:max-w-[600px] max-lg:text-center max-lg:items-center"
-    data-aos="fade-up-left"
+    data-aos="fade-up"
     data-aos-anchor-placement="top-bottom"
     data-aos-duration="2000"
   >
-    <h1 class="text-[30px] font-semibold">{proyecto.titulo}</h1>
+    <h1 class="text-[20px] font-semibold">{proyecto.titulo}</h1>
     <ul class="flex gap-2 flex-wrap items-center max-lg:justify-center">
       {
         proyecto.iconos.map((icono) => (
