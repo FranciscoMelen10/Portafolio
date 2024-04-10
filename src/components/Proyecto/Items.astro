@@ -19,26 +19,44 @@ interface Props {
 }
 
 const { proyecto } = Astro.props;
-console.log(proyecto);
 ---
 
-<div class="flex justify-center items-center gap-6 h-[250px] my-5" >
-  <img src={proyecto.background} alt={proyecto.titulo} loading="lazy" data-aos="fade-up-right"/>
-  <section class="flex flex-col justify-between w-full text-[#F6F6F6] h-full" data-aos="fade-up-left">
+<div
+  class="flex justify-center items-center gap-4 h-[250px] my-5 max-lg:flex-col max-lg:h-auto max-lg:gap-2"
+>
+  <img
+    src={proyecto.background}
+    alt={proyecto.titulo}
+    loading="lazy"
+    data-aos="fade-up-right"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="2000"
+  />
+  <section
+    class="flex flex-col justify-between w-full text-[#F6F6F6] h-full max-lg:w-auto gap-1 max-lg:max-w-[600px] max-lg:text-center max-lg:items-center"
+    data-aos="fade-up-left"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="2000"
+  >
     <h1 class="text-[30px] font-semibold">{proyecto.titulo}</h1>
-    <ul class=" flex gap-2 flex-wrap">
+    <ul class="flex gap-2 flex-wrap items-center max-lg:justify-center">
       {
         proyecto.iconos.map((icono) => (
-          
           <Icon nombre={icono.nombre} imagen={icono.imagen} />
         ))
       }
     </ul>
     <p>{proyecto.descripcion}</p>
     <a
-      class="flex gap-1 py-2 px-3 bg-[#0B0B0B]  w-fit rounded-md" href={`${proyecto.repositorio}`}
+      class="flex gap-1 py-2 px-3 bg-[#0B0B0B] w-fit rounded-md"
+      href={`${proyecto.repositorio}`}
     >
-      <img class="size-[25px]" src="/Iconos/Github.svg" loading="lazy" alt="Github Icon"/>
+      <img
+        class="size-[25px]"
+        src="/Iconos/Github.svg"
+        loading="lazy"
+        alt="Github Icon"
+      />
       <span>Ver código</span>
     </a>
   </section>

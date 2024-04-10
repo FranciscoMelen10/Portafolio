@@ -1,5 +1,5 @@
 ---
-import Icon from '../Card/Icon.astro';
+import Icon from "../Card/Icon.astro";
 
 interface Tecnologia {
   nombre: string;
@@ -18,13 +18,18 @@ interface Props {
 const { aprendizaje } = Astro.props;
 ---
 
-<section class="flex items-center justify-center flex-col gap-2 my-8" data-aos="fade-up">
+<section
+  class="flex items-center justify-center flex-col gap-2 my-8"
+  data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-duration="2000"
+>
   <h1 class="text-[#D1D1D1] text-[24px]">{aprendizaje.titulo}</h1>
   <section class="gap-2 flex flex-row">
-    <ul class="text-[#F6F6F6] flex gap-2 flex-wrap">
+    <ul class="text-[#F6F6F6] flex gap-2 flex-wrap justify-center items-center">
       {
         aprendizaje.iconos.map((icono) => (
-          <Icon nombre={icono.nombre} imagen={icono.url}/>
+          <Icon nombre={icono.nombre} imagen={icono.url} />
         ))
       }
     </ul>

@@ -2,10 +2,10 @@
 import Social from "./Card/Social.astro";
 ---
 
-<div class="w-screen flex items-center justify-evenly max-w-[1000px]">
-  <section class="flex items-center justify-center flex-row h-[350px] gap-10">
-    <aside class="text-[#F6F6F6] w-full h-full flex justify-evenly flex-col" data-aos="fade-right">
-      <h1 class="text-[40px] font-bold">Francisco Meléndez</h1>
+<div class="flex items-center justify-evenly max-w-[1000px] ">
+  <section class="flex items-center justify-center flex-row h-[350px] gap-10 max-lg:flex-col-reverse max-lg:h-auto max-lg:gap-5 max-lg:text-center">
+    <aside class="text-[#F6F6F6] h-full flex justify-evenly flex-col gap-4 max-lg:items-center max-lg:h-auto" data-aos="fade-right" data-aos-duration="1000">
+      <h1 class="text-[40px] font-bold max-sm:text-[30px]">Francisco Meléndez</h1>
       <h2
         class="bg-[#3D3D3D] size-fit p-2 rounded-lg font-semibold text-[20px]"
       >
@@ -22,7 +22,7 @@ import Social from "./Card/Social.astro";
         <Social img="/Iconos/Gmail.svg" name="Gmail" url="mailto:fmelendezsimplina@gmail.com" />
       </article>
     </aside>
-    <img src="/Perfil.png" class="size-[350px]" alt="Foto de perfil de FranciscoMelen10" data-aos="fade-left"/>
+    <img src="/Perfil.png" class="size-[350px]  max-md:size-[auto]" alt="Foto de perfil de FranciscoMelen10" data-aos="fade-left" data-aos-duration="1000"/>
   </section>
 </div>
 
@@ -30,4 +30,10 @@ import Social from "./Card/Social.astro";
   div {
     height: calc(100vh - 100px);
   }
+
+@media (max-width: 1024px) {
+  div {
+    height: auto;
+  }
+}
 </style>

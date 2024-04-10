@@ -1,5 +1,5 @@
 ---
-import Header from "../components/Header.astro";
+//import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Principal from "../components/Principal.astro";
 import Secciones from "../components/Secciones/Index.astro";
@@ -9,12 +9,13 @@ import Proyectos from "../components/Proyecto/Index.astro";
 ---
 
 <Layout title="Portafolio de Francisco Meléndez">
-  <main class="bg-black flex justify-center items-center flex-col">
-    <Header />
+  <main
+    class="bg-black flex justify-center items-center flex-col px-8 gap-5 max-lg:pt-10"
+  >
     <Principal />
     <Secciones />
     <Aprendizajes />
-    <Proyectos/>
-    <Footer/>
+    <Proyectos />
+    <Footer />
   </main>
 </Layout>
