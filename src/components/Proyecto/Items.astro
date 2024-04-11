@@ -22,7 +22,7 @@ const { proyecto } = Astro.props;
 ---
 
 <div
-  class="flex justify-center items-center gap-4 h-[250px] my-5 max-lg:flex-col max-lg:h-auto max-lg:gap-2"
+  class="flex justify-center items-center gap-4 h-[250px] my-2 max-lg:flex-col max-lg:h-auto max-lg:gap-2"
 >
   <img
     src={proyecto.background}
@@ -30,13 +30,13 @@ const { proyecto } = Astro.props;
     loading="lazy"
     data-aos="fade-up-right"
     data-aos-anchor-placement="top-bottom"
-    data-aos-duration="2000"
+    data-aos-duration="3000"
   />
   <section
     class="flex flex-col justify-between w-full text-[#F6F6F6] h-full max-lg:w-auto gap-1 max-lg:max-w-[600px] max-lg:text-center max-lg:items-center"
     data-aos="fade-up"
     data-aos-anchor-placement="top-bottom"
-    data-aos-duration="2000"
+    data-aos-duration="3000"
   >
     <h1 class="text-[20px] font-semibold">{proyecto.titulo}</h1>
     <ul class="flex gap-2 flex-wrap items-center max-lg:justify-center">
