@@ -7,9 +7,9 @@ interface Props {
 const { nombre, imagen } = Astro.props;
 ---
 
-<div
+<li
   class="flex items-center justify-center px-2 py-1 gap-1 bg-[#F6F6F6] rounded-md"
 >
-  <img src={imagen} alt={nombre} class="size-[20px]" loading="lazy" />
+  <img alt={nombre} src={imagen}  class="size-[20px]" loading="lazy" />
   <span class="text-black">{nombre}</span>
-</div>
+</li>

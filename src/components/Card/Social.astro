@@ -7,6 +7,6 @@ interface Props {
 const { name, url, img } = Astro.props;
 ---
 
-<a href={url} class="bg-[#0B0B0B] rounded-full p-3">
-  <img class="size-[30px]"src={img} alt={name} loading="lazy"/>
+<a href={url} class="bg-[#0B0B0B] rounded-full p-2">
+  <img alt={name} src={img} class="size-[30px]" loading="lazy"/>
 </a>
