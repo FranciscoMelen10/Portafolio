@@ -1,54 +1,31 @@
-# Astro Starter Kit: Basics
+# Portafolio Personal de Francisco De Jesús Melendez Simplina
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este repositorio contiene el código fuente de mi portafolio personal, una página web diseñada para mostrar mi experiencia y habilidades como desarrollador de software.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+[![jikan](https://img.shields.io/badge/Figma-000?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/tFfL0pTBLL4VFBBoMJRAN8/Portafolio-Personal?type=design&node-id=0%3A1&mode=design&t=9jpP5ZcPSIRgD719-1)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Demo
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+https://github.com/FranciscoMelen10/Portafolio/assets/104796963/d88e91c0-700f-42d6-80d3-98d492fdaea1
 
-## 🚀 Project Structure
+https://github.com/FranciscoMelen10/Portafolio/assets/104796963/eac6d993-94c1-4637-b9ee-82dfe5506f46
 
-Inside of your Astro project, you'll see the following folders and files:
+## Motivo del proyecto
+El motivo principal de este proyecto es consolidar mi experiencia con proyectos de programación y mostrar mi trayectoria como programador. A través de este portafolio, pretendo demostrar mis habilidades técnicas, así como mi capacidad para trabajar con tecnologías modernas y seguir aprendiendo.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Tecnologías Utilizadas
+- **Astro**: Se ha utilizado Astro como framework para la construcción del sitio web. Astro permite crear aplicaciones web modernas y rápidas utilizando tecnologías web estándar como JavaScript, HTML y CSS.
+- **Tailwind**: Tailwind se ha empleado para el diseño y la estilización del sitio. Esta librería CSS proporciona utilidades predefinidas que facilitan la creación de interfaces de usuario atractivas y responsivas.
+- **JavaScript**: Se ha integrado JavaScript para agregar interactividad y funcionalidad dinámica a la página.
+- **Figma**: El diseño del sitio se ha realizado utilizando Figma, una herramienta de diseño de interfaz de usuario colaborativa basada en la nube.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🧞 Comandos
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Comandos para ejectar el proyecto de manera local. 
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Comandos                  | Acciones                                         |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instalacion de dependecias                       |
+| `npm run dev`             | Iniciar un servidor local `localhost:4321`       |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
