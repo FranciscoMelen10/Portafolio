@@ -14,6 +14,7 @@ proyectos.map((data) => {
     background: `https://portafolio.pockethost.io/api/files/${data.collectionId}/${data.id}/${data.imagen}`,
     descripcion: data.descripcion,
     repositorio: data.repositorio,
+    deploy: data.deploy,
     iconos: data.expand.herramientasId.map((herramienta) => {
       return {
         nombre: herramienta.nombre,
@@ -26,7 +27,7 @@ proyectos.map((data) => {
 
 <div
   id="proyectos"
-  class="flex items-center justify-center flex-col gap-2 max-w-[1000px] relative"
+  class="flex items-center justify-center flex-col gap-4 max-w-[1000px] relative"
   data-aos="fade-up"
   data-aos-anchor-placement="top-center"
   data-aos-duration="2000"
