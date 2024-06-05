@@ -1,5 +1,6 @@
 ---
 import Aprendizaje from "./Items.astro"
+import Seccion from "../Secciones/Seccion.astro";
 
 const Desarrollo_Web = {
     titulo: "Desarrollo Web",
@@ -86,9 +87,9 @@ const Database = {
 };
 ---
 
-<div data-aos="fade-up">
+<Seccion etiqueta="Tecnologías" name="Tecnologías">
     <Aprendizaje aprendizaje={Desarrollo_Web} />
     <Aprendizaje aprendizaje={Escritorio} />
     <Aprendizaje aprendizaje={Database} />
     <Aprendizaje aprendizaje={Herramientas} />
-</div>
+</Seccion>

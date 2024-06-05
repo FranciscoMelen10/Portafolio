@@ -7,10 +7,10 @@ const { name, etiqueta } = Astro.props;
 ---
 
 <div
-  class="flex items-center justify-center flex-col max-w-[1000px] text-center my-5 gap-7"
+  class="flex items-center justify-center flex-col max-w-[1000px] text-center my-10 gap-4"
   id={etiqueta} 
   data-aos="fade-up"
-  data-aos-duration="2000"
+  data-aos-duration="1000"
 >
   <h1 class="text-[#F6F6F6] text-[50px] font-extrabold max-lg:text-[40px]">{name}</h1>
   <slot />
