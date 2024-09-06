@@ -2,26 +2,110 @@
 import Social from "./Card/Social.astro";
 ---
 
-<div class="flex items-center justify-evenly max-w-[1000px] h-screen max-lg:h-auto">
-  <section class="flex items-center justify-center flex-row h-[350px] gap-10 max-lg:flex-col-reverse max-lg:h-auto max-lg:gap-5 max-lg:text-center">
-    <aside class="text-[#F6F6F6] h-full flex justify-evenly flex-col gap-4 max-lg:items-center max-lg:h-auto" data-aos="fade-down" data-aos-duration="1000">
-      <h1 class="text-[40px] font-bold max-sm:text-[30px]">Francisco Meléndez</h1>
+<div
+  class="flex items-center justify-evenly max-w-[1000px] h-screen max-lg:h-auto"
+>
+  <section
+    class="flex items-center justify-center flex-row h-[350px] gap-10 max-lg:flex-col-reverse max-lg:h-auto max-lg:gap-5 max-lg:text-center"
+  >
+    <aside
+      class="text-[#F6F6F6] h-full flex justify-evenly flex-col gap-4 max-lg:items-center max-lg:h-auto"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
+      <h1 class="text-[40px] font-bold max-sm:text-[30px]">
+        Francisco Meléndez
+      </h1>
       <h2
-        class="bg-[#111111] size-fit p-2 rounded-lg font-semibold text-[20px]"
+        class="bg-[#131313] size-fit p-2 rounded-lg font-semibold text-[20px]"
       >
         &lt; Desarrollador Web /&gt;
       </h2>
       <p class="font-light text-[#D1D1D1] text-[20px]">
         Estudiante de ingenieria en sistemas de información, un entusiasta de la
-        programación en busca de oportunidades para crecer y
-        desarrollarme en el mundo de la tecnología.
+        programación en busca de oportunidades para crecer y desarrollarme en el
+        mundo de la tecnología.
       </p>
       <article class="flex items-center gap-2">
-        <Social img="/Iconos/Github.svg" name="Github" url="https://github.com/FranciscoMelen10" />
-        <Social img="/Iconos/LinkedIn.svg" name="LinkedIn" url="https://www.linkedin.com/in/francisco-de-jes%C3%BAs-melendez-simplina-560515247/" />
-        <Social img="/Iconos/Gmail.svg" name="Gmail" url="mailto:fmelendezsimplina@gmail.com" />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/FranciscoMelen10"
+          class="github transition-all rounded-full p-2"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 0C6.71625 0 0 6.82141 0 15.2349C0 22.3737 4.84 28.347 11.365 30C11.295 29.7943 11.25 29.5557 11.25 29.2598V26.6559C10.6413 26.6559 9.62125 26.6559 9.365 26.6559C8.33875 26.6559 7.42625 26.2078 6.98375 25.3749C6.4925 24.4494 6.4075 23.0339 5.19 22.168C4.82875 21.8798 5.10375 21.551 5.52 21.5954C6.28875 21.8163 6.92625 22.3521 7.52625 23.1468C8.12375 23.9429 8.405 24.1231 9.52125 24.1231C10.0625 24.1231 10.8725 24.0914 11.635 23.9695C12.045 22.912 12.7537 21.9382 13.62 21.4786C8.625 20.9568 6.24125 18.4329 6.24125 15.0063C6.24125 13.5311 6.86 12.1041 7.91125 10.9018C7.56625 9.70842 7.1325 7.27465 8.04375 6.34786C10.2913 6.34786 11.65 7.82818 11.9763 8.2281C13.0963 7.83834 14.3262 7.61744 15.6187 7.61744C16.9137 7.61744 18.1487 7.83834 19.2712 8.23064C19.5937 7.83326 20.9538 6.34786 23.2063 6.34786C24.1213 7.27592 23.6825 9.71985 23.3337 10.9107C24.3787 12.1105 24.9938 13.5336 24.9938 15.0063C24.9938 18.4304 22.6137 20.953 17.6262 21.4774C18.9987 22.2048 20 24.2488 20 25.7888V29.2598C20 29.3919 19.9713 29.4871 19.9563 29.6001C25.8013 27.5193 30 21.8824 30 15.2349C30 6.82141 23.2837 0 15 0Z"
+              fill="currentColor"></path>
+          </svg>
+        </a>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="LinkendIn transition-all rounded-full p-2"
+          href="https://www.linkedin.com/in/francisco-de-jes%C3%BAs-melendez-simplina-560515247/"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.2727 0H2.72727C1.22045 0 0 1.22045 0 2.72727V27.2727C0 28.7795 1.22045 30 2.72727 30H27.2727C28.7795 30 30 28.7795 30 27.2727V2.72727C30 1.22045 28.7795 0 27.2727 0ZM9.48273 24.5455H5.46V11.6018H9.48273V24.5455ZM7.43046 9.75136C6.13364 9.75136 5.085 8.7 5.085 7.40591C5.085 6.11182 6.135 5.06182 7.43046 5.06182C8.72318 5.06182 9.77455 6.11318 9.77455 7.40591C9.77455 8.7 8.72318 9.75136 7.43046 9.75136ZM24.5509 24.5455H20.5309V18.2509C20.5309 16.7495 20.5036 14.8186 18.4405 14.8186C16.3473 14.8186 16.0255 16.4536 16.0255 18.1418V24.5455H12.0055V11.6018H15.8645V13.3705H15.9191C16.4564 12.3532 17.7682 11.28 19.725 11.28C23.7982 11.28 24.5509 13.9609 24.5509 17.4464V24.5455Z"
+              fill="currentColor"></path>
+          </svg>
+        </a>
+
+        <a
+          class="Gmail transition-all rounded-full p-2"
+          href="mailto:fmelendezsimplina@gmail.com"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 46 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 16.403V16.39V3.38899L9.88 3.29999H9.87L7.14 1.27999C5.47 0.0399864 3.09 0.0999871 1.61 1.55999C0.62 2.53999 0 3.89999 0 5.40999V9.01199L10 16.403ZM36 16.39V16.403L46 9.01199V5.40999C46 3.91999 45.4 2.55999 44.42 1.57999C42.96 0.122987 40.655 -0.0480133 38.996 1.17699L36.12 3.29999L36 3.38899V16.39ZM12 17.868L22.406 25.56C22.759 25.821 23.242 25.821 23.595 25.56L34 17.868V4.86699L23 13L12 4.86699V17.868ZM36 18.889V34C36 34.552 36.448 35 37 35H43.5C44.881 35 46 33.881 46 32.5V11.497L36 18.889ZM10 18.889L0 11.497V32.5C0 33.881 1.119 35 2.5 35H9C9.552 35 10 34.552 10 34V18.889Z"
+              fill="currentColor"></path>
+          </svg>
+        </a>
       </article>
     </aside>
-    <img src="/Perfil.png" class="size-[350px]  max-md:size-[auto]" alt="Foto de perfil de FranciscoMelen10" data-aos="fade-down" data-aos-duration="1000"/>
+    <img
+      src="/Perfil.png"
+      class="size-[350px] max-md:size-[auto]"
+      alt="Foto de perfil de FranciscoMelen10"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    />
   </section>
 </div>
+
+<style>
+  .github:hover svg {
+    color: purple;
+    transition: color 0.5s ease;
+  }
+
+  .LinkendIn:hover svg {
+    color: #0077b5;
+    transition: color 0.5s ease;
+  }
+
+  .Gmail:hover svg {
+    color: red;
+    transition: color 0.5s ease;
+  }
+</style>

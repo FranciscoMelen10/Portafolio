@@ -1,95 +1,110 @@
 ---
-import Aprendizaje from "./Items.astro"
+import Aprendizaje from "./Items.astro";
 import Seccion from "../Secciones/Seccion.astro";
 
 const Desarrollo_Web = {
-    titulo: "Desarrollo Web",
-    iconos: [
-        {
-            nombre: "Astro",
-            url: "/Iconos/Astro.svg",
-        },
-        {
-            nombre: "React",
-            url: "/Iconos/React.svg",
-        },
-        {
-            nombre: "Tailwind",
-            url: "/Iconos/Tailwind.svg",
-        },
-        {
-            nombre: "Javascript",
-            url: "/Iconos/JavaScript.svg",
-        },
-        {
-            nombre: "HTML",
-            url: "/Iconos/HTML.svg",
-        },
-        {
-            nombre: "CSS",
-            url: "/Iconos/CSS.svg",
-        },
-    ],
+  titulo: "Desarrollo Web",
+  iconos: [
+    {
+      nombre: "Astro",
+      url: "/Iconos/Astro.svg",
+    },
+    {
+      nombre: "React",
+      url: "/Iconos/React.svg",
+    },
+    {
+      nombre: "Tailwind",
+      url: "/Iconos/Tailwind.svg",
+    },
+    {
+      nombre: "Javascript",
+      url: "/Iconos/JavaScript.svg",
+    },
+    {
+      nombre: "HTML",
+      url: "/Iconos/HTML.svg",
+    },
+    {
+      nombre: "CSS",
+      url: "/Iconos/CSS.svg",
+    },
+  ],
 };
 
 const Escritorio = {
-    titulo: "Aplicaciones de escritorio",
-    iconos: [
-        {
-            nombre: "Python",
-            url: "/Iconos/Python.svg",
-        },
-        {
-            nombre: "Java",
-            url: "/Iconos/Java.svg",
-        },
-        {
-            nombre: "C#",
-            url: "/Iconos/C++.svg",
-        },
-        {
-            nombre: "Visual Basic",
-            url: "/Iconos/Visual Basic.svg",
-        },
-    ],
+  titulo: "Aplicaciones de escritorio",
+  iconos: [
+    {
+      nombre: "Python",
+      url: "/Iconos/Python.svg",
+    },
+    {
+      nombre: "Java",
+      url: "/Iconos/Java.svg",
+    },
+    {
+      nombre: "C#",
+      url: "/Iconos/C++.svg",
+    },
+    {
+      nombre: "Visual Basic",
+      url: "/Iconos/Visual Basic.svg",
+    },
+  ],
 };
 
 const Herramientas = {
-    titulo: "Herramientas",
-    iconos: [
-        {
-            nombre: "Visual Studio Code",
-            url: "/Iconos/Visual Code.svg",
-        },
-        {
-            nombre: "Visual Studio",
-            url: "/Iconos/Visual Studio.svg",
-        },
-        {
-            nombre: "Figma",
-            url: "/Iconos/Figma.svg",
-        },
-    ],
+  titulo: "Herramientas",
+  iconos: [
+    {
+      nombre: "Visual Studio Code",
+      url: "/Iconos/Visual Code.svg",
+    },
+    {
+      nombre: "Visual Studio",
+      url: "/Iconos/Visual Studio.svg",
+    },
+    {
+      nombre: "Figma",
+      url: "/Iconos/Figma.svg",
+    },
+    {
+      nombre: "Expo",
+      url: "/Iconos/Expo.svg",
+    },
+  ],
 };
 
 const Database = {
-    titulo: "Base de datos",
-    iconos: [
-        {
-            nombre: "SQL Server",
-            url: "/Iconos/Sql Server.svg",
-        },
-        {
-            nombre: "MySQL",
-            url: "/Iconos/Mysql.svg",
-        }
-    ],
+  titulo: "Base de datos",
+  iconos: [
+    {
+      nombre: "SQL Server",
+      url: "/Iconos/Sql Server.svg",
+    },
+    {
+      nombre: "MySQL",
+      url: "/Iconos/Mysql.svg",
+    },
+  ],
+};
+
+const Movil = {
+  titulo: "Desarrollo movil",
+  iconos: [
+    {
+      nombre: "React Native",
+      url: "/Iconos/React native.svg",
+    },
+  ],
 };
 ---
 
 <Seccion etiqueta="Tecnologías" name="Tecnologías">
-    <Aprendizaje aprendizaje={Desarrollo_Web} />
-    <Aprendizaje aprendizaje={Escritorio} />
-    <Aprendizaje aprendizaje={Database} />
-    <Aprendizaje aprendizaje={Herramientas} />
+  <Aprendizaje aprendizaje={Desarrollo_Web} />
+  <Aprendizaje aprendizaje={Escritorio} />
+  <Aprendizaje aprendizaje={Database} />
+  <Aprendizaje aprendizaje={Herramientas} />
+  <Aprendizaje aprendizaje={Movil} />
 </Seccion>

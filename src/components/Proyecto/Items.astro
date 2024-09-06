@@ -23,16 +23,16 @@ const { proyecto } = Astro.props;
 ---
 
 <div
-  class="flex justify-center items-center gap-5 h-[250px] my-2 max-lg:flex-col max-lg:h-auto max-lg:gap-2"
+  class="flex justify-center items-center gap-5 h-[250px] my-2 max-lg:flex-col max-lg:h-auto max-lg:gap-5"
 >
   <img
     src={proyecto.background}
     alt={proyecto.titulo}
     loading="lazy"
-    class="border-[#1f1f1f] border-2 rounded-2xl"
+    class="border-[#353535] border-2 rounded-2xl"
   />
   <section
-    class="flex flex-col justify-between w-full text-[#F6F6F6] h-full max-lg:w-auto gap-1 max-lg:gap-4 max-lg:max-w-[600px] max-lg:text-center max-lg:items-center"
+    class="flex flex-col justify-between w-full text-[#F6F6F6] h-full max-lg:w-auto gap-1 max-lg:gap-4 max-lg:max-w-[600px] max-lg: max-lg:items-center"
   >
     <h1 class="text-[20px] font-semibold">{proyecto.titulo}</h1>
     <ul class="flex gap-2 flex-wrap items-center max-lg:justify-center">
@@ -43,33 +43,65 @@ const { proyecto } = Astro.props;
       }
     </ul>
     <p class="font-light text-[#D1D1D1]">{proyecto.descripcion}</p>
-    <article class="flex gap-4">
+    <article class="flex gap-4 transition-all">
       <a
-        class="flex justify-center items-center gap-2 py-2 px-3 bg-[#0a0a0a] w-fit rounded-md"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex justify-center items-center gap-2 py-2 px-3 bg-[#131313] w-fit rounded-md hover:bg-white hover:text-black transition-all"
         href={`${proyecto.repositorio}`}
       >
-        <img
-          alt="Github Icon"
-          src="/Iconos/Github.svg"
-          class="size-[25px]"
-          loading="lazy"
-        />
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15 0C6.71625 0 0 6.82141 0 15.2349C0 22.3737 4.84 28.347 11.365 30C11.295 29.7943 11.25 29.5557 11.25 29.2598V26.6559C10.6413 26.6559 9.62125 26.6559 9.365 26.6559C8.33875 26.6559 7.42625 26.2078 6.98375 25.3749C6.4925 24.4494 6.4075 23.0339 5.19 22.168C4.82875 21.8798 5.10375 21.551 5.52 21.5954C6.28875 21.8163 6.92625 22.3521 7.52625 23.1468C8.12375 23.9429 8.405 24.1231 9.52125 24.1231C10.0625 24.1231 10.8725 24.0914 11.635 23.9695C12.045 22.912 12.7537 21.9382 13.62 21.4786C8.625 20.9568 6.24125 18.4329 6.24125 15.0063C6.24125 13.5311 6.86 12.1041 7.91125 10.9018C7.56625 9.70842 7.1325 7.27465 8.04375 6.34786C10.2913 6.34786 11.65 7.82818 11.9763 8.2281C13.0963 7.83834 14.3262 7.61744 15.6187 7.61744C16.9137 7.61744 18.1487 7.83834 19.2712 8.23064C19.5937 7.83326 20.9538 6.34786 23.2063 6.34786C24.1213 7.27592 23.6825 9.71985 23.3337 10.9107C24.3787 12.1105 24.9938 13.5336 24.9938 15.0063C24.9938 18.4304 22.6137 20.953 17.6262 21.4774C18.9987 22.2048 20 24.2488 20 25.7888V29.2598C20 29.3919 19.9713 29.4871 19.9563 29.6001C25.8013 27.5193 30 21.8824 30 15.2349C30 6.82141 23.2837 0 15 0Z"
+            fill="currentColor"></path>
+        </svg>
+
         <span>Ver código</span>
       </a>
+
       {
         proyecto.deploy !== "" ? (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            class="flex justify-center items-center gap-2 py-2 px-3 bg-[#0a0a0a] w-fit rounded-md"
+            class="flex justify-center items-center gap-2 py-2 px-3 bg-[#131313] w-fit rounded-md hover:bg-white hover:text-black transition-all"
             href={`${proyecto.deploy}`}
           >
-            <img
-              alt="Github Icon"
-              src="/Iconos/Deploy.svg"
-              class="size-[25px]"
-              loading="lazy"
-            />
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.07615 5.42831C5.53709 5.42831 5.91076 5.02684 5.91076 4.5316C5.91076 4.03636 5.53709 3.63489 5.07615 3.63489C4.61521 3.63489 4.24155 4.03636 4.24155 4.5316C4.24155 5.02684 4.61521 5.42831 5.07615 5.42831Z"
+                fill="currentColor"
+              />
+              <path
+                d="M8.01596 5.42831C8.4769 5.42831 8.85056 5.02684 8.85056 4.5316C8.85056 4.03636 8.4769 3.63489 8.01596 3.63489C7.55502 3.63489 7.18135 4.03636 7.18135 4.5316C7.18135 5.02684 7.55502 5.42831 8.01596 5.42831Z"
+                fill="currentColor"
+              />
+              <path
+                d="M10.9558 5.42831C11.4167 5.42831 11.7904 5.02684 11.7904 4.5316C11.7904 4.03636 11.4167 3.63489 10.9558 3.63489C10.4948 3.63489 10.1212 4.03636 10.1212 4.5316C10.1212 5.02684 10.4948 5.42831 10.9558 5.42831Z"
+                fill="currentColor"
+              />
+              <path
+                d="M19.226 19.6742L21.9489 29.2904C22.2126 30.2217 23.4333 30.2418 23.723 29.3183L24.9977 25.2541C25.0437 25.1079 25.1204 24.9751 25.222 24.866C25.3235 24.7569 25.4471 24.6744 25.5832 24.6251L29.3659 23.2555C30.2244 22.9443 30.2067 21.6327 29.3399 21.3494L20.3897 18.4239C20.2281 18.3717 20.0563 18.3675 19.8926 18.4118C19.7289 18.4561 19.5795 18.5472 19.4601 18.6754C19.3408 18.8036 19.256 18.9642 19.2148 19.1401C19.1736 19.3159 19.1775 19.5005 19.226 19.6742Z"
+                fill="currentColor"
+              />
+              <path
+                d="M17.7375 20.1604C17.6222 19.7614 17.5965 19.3387 17.6625 18.9269C17.7286 18.5152 17.8845 18.1261 18.1174 17.7915C18.3488 17.4564 18.6496 17.1838 18.9961 16.9955C19.3427 16.8071 19.7253 16.7081 20.1136 16.7063C20.3596 16.7063 20.6046 16.7453 20.8434 16.8234L28.8905 19.4522V4.14897C28.8905 1.86258 27.1569 0 25.0289 0H3.86161C1.73357 0 0 1.86258 0 4.14897V22.719C0 23.8223 0.407941 24.8804 1.13408 25.6606C1.86022 26.4408 2.84508 26.8791 3.87199 26.8791H19.6382L17.7375 20.1604ZM1.86852 7.0711V4.15009C1.86852 2.96897 2.7623 2.00868 3.86161 2.00868H25.0278C26.1271 2.00868 27.0209 2.96897 27.0209 4.15009V7.0711H1.86852Z"
+                fill="currentColor"
+              />
+            </svg>
+
             <span>Ver sitio</span>
           </a>
         ) : (
@@ -79,3 +111,10 @@ const { proyecto } = Astro.props;
     </article>
   </section>
 </div>
+
+<style>
+  a:hover svg {
+    fill: black; /* Cambia a color negro en hover */
+    transition: fill 0.3s ease;
+  }
+</style>
