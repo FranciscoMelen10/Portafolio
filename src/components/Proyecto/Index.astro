@@ -2,8 +2,8 @@
 // Componetes
 import Proyecto from "./Items.astro";
 
-// Hooks
-import { proyectos } from "../../hooks/Proyectos";
+// Data
+import proyectos from "../../Data/Proyectos.json";
 
 // Agregar todos los proyectos en este arreglo mediante el hook de proyectos
 let Proyectos = [];
@@ -11,14 +11,14 @@ let Proyectos = [];
 proyectos.map((data) => {
   Proyectos.push({
     titulo: data.nombre,
-    background: `https://portafolio.pockethost.io/api/files/${data.collectionId}/${data.id}/${data.imagen}`,
+    background: data.imagen,
     descripcion: data.descripcion,
     repositorio: data.repositorio,
     deploy: data.deploy,
-    iconos: data.expand.herramientasId.map((herramienta) => {
+    iconos: data.herramientasId.map((herramienta) => {
       return {
         nombre: herramienta.nombre,
-        imagen: `https://portafolio.pockethost.io/api/files/${herramienta.collectionId}/${herramienta.id}/${herramienta.imagen}`,
+        imagen: herramienta.img,
       };
     }),
   });

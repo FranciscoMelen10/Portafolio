@@ -1,0 +1,92 @@
+[
+  {
+    "deploy": "https://bit.ly/franciscoperdomo",
+    "descripcion": "Portafolio deportivo de Francisco Perdomo, destaca sus logros como entrenador en Nicaragua, tanto a nivel nacional como internacional. Es una recopilación de sus destacadas contribuciones y éxitos en su carrera futbolística.\r\n",
+    "herramientasId": [
+      { "img": "/Iconos/Astro.svg", "nombre": "Astro" },
+      { "img": "/Iconos/JavaScript.svg", "nombre": "JavaScript" },
+      { "img": "/Iconos/Figma.svg", "nombre": "Figma" }
+    ],
+    "imagen": "/Background/portafolio_francisco_perdomo.svg",
+    "nombre": "Portafolio Francisco Perdomo",
+    "repositorio": "https://github.com/FranciscoMelen10/Portafolio_Francisco_Perdomo"
+  },
+  {
+    "deploy": "https://animeverses.vercel.app/",
+    "descripcion": "Este proyecto es una aplicación web construida con Next.js, que utiliza Tailwind CSS para el diseño y la API de Jikan para obtener datos de anime. Muestra una lista de todos los registros de anime disponibles de la API de Jikan.",
+    "herramientasId": [
+      { "img": "/Iconos/NextJs.svg", "nombre": "NextJs" },
+      { "img": "/Iconos/Tailwind.svg", "nombre": "Tailwind" }
+    ],
+    "imagen": "/Background/AnimeVerse.png",
+    "nombre": "AnimeVerse",
+    "repositorio": "https://github.com/FranciscoMelen10/AnimeVerse"
+  },
+  {
+    "deploy": "",
+    "descripcion": "Este proyecto es una aplicación móvil desarrollada con React Native y Expo, diseñada para mejorar la experiencia del cliente de Juanito Shoes. La app permite realizar pedidos, consultar el historial de compras y gestionar la configuración de la cuenta de manera intuitiva.",
+    "herramientasId": [
+      { "img": "/Iconos/Expo.svg", "nombre": "Expo" },
+      { "img": "/Iconos/React native.svg", "nombre": "React Native" }
+    ],
+    "imagen": "/Background/juanito_shoes.svg",
+    "nombre": "Juanito Shoes - Móvil ",
+    "repositorio": "https://github.com/osmarmora05/juanito_shoes_MobileApp"
+  },
+  {
+    "deploy": "https://dev-challenges-franciscomelen10.vercel.app/",
+    "descripcion": "Práctica de diseño y organización de una página web, creando componentes responsivos utilizando los desafíos proporcionados por Dev Challenges para desarrolladores web.",
+    "herramientasId": [
+      { "img": "/Iconos/Tailwind.svg", "nombre": "Tailwind" },
+      { "img": "/Iconos/Astro.svg", "nombre": "Astro" },
+      { "img": "/Iconos/JavaScript.svg", "nombre": "JavaScript" }
+    ],
+    "imagen": "/Background//dev_challenges.svg",
+    "nombre": "Dev Challenges - Frontend",
+    "repositorio": "https://github.com/FranciscoMelen10/dev-challenges"
+  },
+  {
+    "deploy": "",
+    "descripcion": "La aplicación web de recetas de comida emplea librerías de React para una experiencia interactiva, Tailwind para un diseño eficiente y Pocketbase para una gestión de datos sólida y escalable.",
+    "herramientasId": [
+      { "img": "/Iconos/Tailwind.svg", "nombre": "Tailwind" },
+      { "img": "/Iconos/React.svg", "nombre": "React" }
+    ],
+    "imagen": "/Background/virtual_chef.svg",
+    "nombre": "Virtual Chef - Web",
+    "repositorio": "https://github.com/EdCenten0/VirtualChefWeb"
+  },
+  {
+    "deploy": "",
+    "descripcion": "La aplicación Móvil de recetas de comida emplea librerías de React-native para una experiencia interactiva y usando Pockethost para una gestión de datos sólida y escalable.",
+    "herramientasId": [
+      { "img": "/Iconos/Expo.svg", "nombre": "Expo" },
+      { "img": "/Iconos/React native.svg", "nombre": "React Native" }
+    ],
+    "imagen": "/Background/virtual_chef.svg",
+    "nombre": "Virtual Chef - Móvil ",
+    "repositorio": "https://github.com/FranciscoMelen10/VirtualChef"
+  },
+  {
+    "deploy": "",
+    "descripcion": "El proyecto de software de MAPA Furniture and Design busca mejorar la gestión de la empresa mediante el desarrollo de una aplicación en Python, implementando una base de datos y una interfaz de usuario eficientes para almacenar y consultar la información relacionada con la venta y diseño de muebles.",
+    "herramientasId": [
+      { "img": "/Iconos/Python.svg", "nombre": "Python" },
+      { "img": "/Iconos/Mysql.svg", "nombre": "Mysql" }
+    ],
+    "imagen": "/Background/MAPA.svg",
+    "nombre": " MAPA - Python",
+    "repositorio": "https://github.com/FranciscoMelen10/MAPA-Python"
+  },
+  {
+    "deploy": "",
+    "descripcion": "El proyecto de software de MAPA Furniture and Design busca mejorar la gestión de la empresa mediante el desarrollo de una aplicación en Visual Basic, implementando una base de datos, una interfaz de usuario eficientes para almacenar y consultar la información atrevés de reportes con crystal report.",
+    "herramientasId": [
+      { "img": "/Iconos/Visual Basic.svg", "nombre": "Visual Basic" },
+      { "img": "/Iconos/Sql Server.svg", "nombre": "Sql Server" }
+    ],
+    "imagen": "/Background/MAPA.svg",
+    "nombre": " MAPA - Visual Basic",
+    "repositorio": "https://github.com/FranciscoMelen10/MAPA-Visual-Basic2"
+  }
+]
