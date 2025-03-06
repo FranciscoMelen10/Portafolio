@@ -1,0 +1,53 @@
+---
+import type { CursoProps } from "../../types";
+import Icon from "../Card/Icon.astro";
+
+interface Props {
+  curso: CursoProps;
+}
+
+const { curso } = Astro.props;
+const { nombre, imagen, modalidad, certificado, descripcion, iconos } = curso;
+---
+
+<div class="flex flex-col gap-5 w-[500px] max-md:w-auto">
+  <picture class="w-auto h-[300px] max-md:h-[250px] relative">
+    <img
+      class="object-cover rounded-lg absolute top-0 left-0 w-full h-full"
+      src={imagen}
+      alt=`Logo de ${nombre}`
+    />
+    {
+      modalidad === "Online" ? (
+        <p class="bg-green-500 text-white px-3 py-1 w-fit rounded-md absolute top-3 right-3">
+          Online
+        </p>
+      ) : (
+        <p class="bg-blue-600 text-white px-3 py-1 w-fit rounded-md absolute top-3 right-3">
+          Presencial
+        </p>
+      )
+    }
+  </picture>
+  <section class="flex flex-col gap-5">
+    <h1 class="text-white text-[24px] font-bold">{nombre}</h1>
+    <ul class="flex gap-2 flex-wrap">
+      {
+        iconos.map((icono) => (
+          <Icon nombre={icono.nombre} imagen={icono.imagen} />
+        ))
+      }
+    </ul>
+    <p class="font-light text-[#D1D1D1]">{descripcion}</p>
+
+    <a
+      href={certificado}
+      class="text-blue-500 hover:underline flex items-center gap-2"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Ver Certificación
+      <img src="/Iconos/Visitar.svg" class="size-[16px]" srcset="" /></a
+    >
+  </section>
+</div>

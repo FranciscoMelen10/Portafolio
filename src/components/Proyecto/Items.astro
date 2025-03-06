@@ -1,22 +1,9 @@
 ---
 import Icon from "../Card/Icon.astro";
-
-interface Tecnologia {
-  nombre: string;
-  imagen: string;
-}
-
-interface Proyecto {
-  titulo: string;
-  background: string;
-  descripcion: string;
-  repositorio: string;
-  deploy: string;
-  iconos: Tecnologia[];
-}
+import type { ProyectoProps } from "../../types"
 
 interface Props {
-  proyecto: Proyecto;
+  proyecto: ProyectoProps;
 }
 
 const { proyecto } = Astro.props;

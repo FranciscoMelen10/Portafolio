@@ -1,0 +1,54 @@
+[
+  {
+    "nombre": "Curso Intensivo UX/UI - NuclioDigital School",
+    "descripcion": "Aprende los fundamentos del diseño UX/UI con herramientas como Figma, HTML, CSS y JavaScript en un curso intensivo impartido por Nuclio Digital School.",
+    "herramientas": [
+      { "img": "/Iconos/Figma.svg", "nombre": "Figma" },
+      { "img": "/Iconos/HTML.svg", "nombre": "HTML" },
+      { "img": "/Iconos/CSS.svg", "nombre": "CSS" },
+      { "img": "/Iconos/JavaScript.svg", "nombre": "JavaScript" }
+    ],
+    "imagen": "/Background/NuclioDigital School.jpeg",
+    "certificado": "https://drive.google.com/file/d/1MPFG_EEP06dfrQ42kXp2uPJFIEgLeyQK/view?usp=sharing",
+    "modalidad": "Online"
+  },
+  {
+    "nombre": "Creación de Páginas Web con Astro - Platzi",
+    "descripcion": "Descubre cómo desarrollar sitios web optimizados con Astro, JavaScript y TailwindCSS en este curso de Platzi. Ideal para quienes buscan eficiencia y rapidez en la web.",
+
+    "herramientas": [
+      { "img": "/Iconos/Astro.svg", "nombre": "Astro" },
+      { "img": "/Iconos/JavaScript.svg", "nombre": "JavaScript" },
+      { "img": "/Iconos/Tailwind.svg", "nombre": "Tailwind" }
+    ],
+    "imagen": "/Background/Platzi.jpeg",
+    "certificado": "https://drive.google.com/file/d/1JrUEMffLWOoqbqWOQJ7sNXVm-dfMm9NM/view?usp=sharing",
+    "modalidad": "Online"
+  },
+  {
+    "nombre": "Diseño de Páginas Web (Básico - Intermedio) - UNI",
+    "descripcion": "Curso impartido por la Universidad Nacional de Ingeniería (UNI), enfocado en el diseño de páginas web desde nivel básico hasta intermedio, utilizando HTML, CSS y JavaScript.",
+
+    "herramientas": [
+      { "img": "/Iconos/HTML.svg", "nombre": "HTML" },
+      { "img": "/Iconos/CSS.svg", "nombre": "CSS" },
+      { "img": "/Iconos/JavaScript.svg", "nombre": "JavaScript" }
+    ],
+    "imagen": "/Background/UNI.jpg",
+    "certificado": "https://drive.google.com/file/d/1qLNRyldIjPY1I3gPnXadJLdSH_QFN89A/view?usp=sharing",
+    "modalidad": "Presencial"
+  },
+  {
+    "nombre": "Manipulación de Arrays con JavaScript - Platzi",
+    "descripcion": "Aprende a manejar arrays en JavaScript con técnicas avanzadas en este curso de Platzi. Perfecto para mejorar tu lógica de programación y manipulación de datos.",
+
+    "herramientas": [
+      { "img": "/Iconos/HTML.svg", "nombre": "HTML" },
+      { "img": "/Iconos/CSS.svg", "nombre": "CSS" },
+      { "img": "/Iconos/JavaScript.svg", "nombre": "JavaScript" }
+    ],
+    "imagen": "/Background/Platzi.jpeg",
+    "certificado": "https://drive.google.com/file/d/1qJe7cfuqVn0IRTpXeisLFCGpJMHUTJff/view?usp=sharing",
+    "modalidad": "Online"
+  }
+]

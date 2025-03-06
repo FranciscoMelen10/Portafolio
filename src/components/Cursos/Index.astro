@@ -1,0 +1,42 @@
+---
+import Item from "./Items.astro"
+
+import cursos from "../../Data/Cursos.json"
+
+// Agregar todos los cursos en este arreglo mediante el hook de cursos
+let Cursos = []
+
+// Mapear los cursos
+cursos.map((data) => {
+  Cursos.push({
+    nombre: data.nombre,
+    imagen: data.imagen,
+    certificado: data.certificado,
+    modalidad: data.modalidad,
+    descripcion: data.descripcion,
+    iconos: data.herramientas.map((herramienta) => {
+      return {
+        nombre: herramienta.nombre,
+        imagen: herramienta.img,
+      }
+    }),
+  })
+})
+---
+
+<div
+  id="Cursos"
+  class="flex items-center justify-center flex-col gap-10 max-w-[1000px] relative my-5"
+  data-aos="fade-up"
+  data-aos-anchor-placement="top-center"
+  data-aos-duration="1000"
+>
+  <h1 class="text-[#F6F6F6] text-[48px] font-bold">Cursos</h1>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 ">
+    {
+      Cursos.map((data) => {
+        return <Item curso={data} />;
+      })
+    }
+  </div>
+</div>

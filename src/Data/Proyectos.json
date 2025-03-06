@@ -1,6 +1,6 @@
 [
   {
-    "deploy": "https://bit.ly/franciscoperdomo",
+    "deploy": "https://francisco-perdomo.vercel.app/",
     "descripcion": "Portafolio deportivo de Francisco Perdomo, destaca sus logros como entrenador en Nicaragua, tanto a nivel nacional como internacional. Es una recopilación de sus destacadas contribuciones y éxitos en su carrera futbolística.\r\n",
     "herramientasId": [
       { "img": "/Iconos/Astro.svg", "nombre": "Astro" },

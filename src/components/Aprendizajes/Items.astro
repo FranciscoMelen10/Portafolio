@@ -1,18 +1,10 @@
 ---
 import Icon from "../Card/Icon.astro";
 
-interface Tecnologia {
-  nombre: string;
-  url: string;
-}
-
-interface Aprendizaje {
-  titulo: string;
-  iconos: Tecnologia[];
-}
+import type { AprendizajeProps } from "../../types";
 
 interface Props {
-  aprendizaje: Aprendizaje;
+  aprendizaje: AprendizajeProps;
 }
 
 const { aprendizaje } = Astro.props;
@@ -28,7 +20,7 @@ const { aprendizaje } = Astro.props;
     <ul class="flex gap-2 flex-wrap justify-center items-center">
       {
         aprendizaje.iconos.map((icono) => (
-          <Icon nombre={icono.nombre} imagen={icono.url} />
+          <Icon nombre={icono.nombre} imagen={icono.imagen} />
         ))
       }
     </ul>
