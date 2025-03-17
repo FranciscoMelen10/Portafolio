@@ -50,5 +50,16 @@
     "imagen": "/Background/Platzi.jpeg",
     "certificado": "https://drive.google.com/file/d/1qJe7cfuqVn0IRTpXeisLFCGpJMHUTJff/view?usp=sharing",
     "modalidad": "Online"
+  },
+  {
+    "nombre": "Acelerador de Carrera con Power BI - Empowerdata Latam",
+    "descripcion": "Curso de Empowerdata Latam que te permitirá dominar la herrameinta de Power BI y aprender analizar datos de manera eficiente.",
+
+    "herramientas": [
+      { "img": "/Iconos/PowerBI.svg", "nombre": "Power BI" }
+    ],
+    "imagen": "/Background/PowerBI.jpg",
+    "certificado": "https://drive.google.com/file/d/14NvQjrrG5xj8iTR8_gdg5KvdnsU-M0IV/view?usp=sharing",
+    "modalidad": "Online"
   }
 ]

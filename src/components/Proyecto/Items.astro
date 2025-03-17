@@ -10,19 +10,19 @@ const { proyecto } = Astro.props;
 ---
 
 <div
-  class="flex justify-center items-center gap-5 h-[250px] my-2 max-lg:flex-col max-lg:h-auto max-lg:gap-5"
+  class="flex justify-center items-center gap-5 h-[250px] my-2 max-lg:flex-col max-lg:h-auto max-lg:gap-5 max-lg:max-w-[500px]"
 >
   <img
     src={proyecto.background}
     alt={proyecto.titulo}
     loading="lazy"
-    class="border-[#353535] border-2 rounded-2xl"
+    class="border-[#353535] border-2 rounded-2xl w-full"
   />
   <section
-    class="flex flex-col justify-between w-full text-[#F6F6F6] h-full max-lg:w-auto gap-1 max-lg:gap-4 max-lg:max-w-[600px] max-lg: max-lg:items-center"
+    class="flex flex-col justify-between w-full text-[#F6F6F6] h-full max-lg:w-auto gap-1 max-lg:gap-4 max-lg:items-center"
   >
     <h1 class="text-[20px] font-semibold">{proyecto.titulo}</h1>
-    <ul class="flex gap-2 flex-wrap items-center max-lg:justify-center">
+    <ul class="flex gap-2 flex-wrap items-center">
       {
         proyecto.iconos.map((icono) => (
           <Icon nombre={icono.nombre} imagen={icono.imagen} />
